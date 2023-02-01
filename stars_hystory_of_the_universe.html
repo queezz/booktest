@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notebook test &#8212; Test Plasma Book</title>
+    <title>Brief history of the universe &#8212; Test Plasma Book</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -49,9 +49,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Star formation" href="stars_hydrostatic_equilibrium.html" />
+    <link rel="prev" title="Physics of Stars" href="physics_of_stars.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -116,19 +120,19 @@ const thebe_selector_output = ".output, .cell_output"
   Stars
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="physics_of_stars.html">
    Physics of Stars
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="stars_hystory_of_the_universe.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Brief history of the universe
     </a>
    </li>
@@ -207,35 +211,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/../docs/notebooks.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -275,7 +250,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fstars_hystory_of_the_universe.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -303,7 +278,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/notebooks.ipynb"
+        <a href="_sources/stars_hystory_of_the_universe.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -314,7 +289,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -352,7 +327,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Notebook test</h1>
+                <h1>Brief history of the universe</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -364,30 +339,54 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="notebook-test">
-<h1>Notebook test<a class="headerlink" href="#notebook-test" title="Permalink to this headline">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Solar&#39;</span><span class="p">,</span> <span class="s1">&#39;Nuclear&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Biomass&#39;</span><span class="p">,</span> <span class="s1">&#39;Hydro&#39;</span><span class="p">,</span> <span class="s1">&#39;Coal + Oil&#39;</span><span class="p">,</span> <span class="s1">&#39;Gas&#39;</span><span class="p">,</span> <span class="s1">&#39;Geothermal&#39;</span><span class="p">,</span> <span class="s1">&#39;Total&#39;</span><span class="p">]</span>
-<span class="n">p2020</span> <span class="o">=</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span>  <span class="mi">400</span><span class="p">,</span>  <span class="mi">150</span><span class="p">,</span>   <span class="mi">40</span><span class="p">,</span>  <span class="mi">410</span><span class="p">,</span>  <span class="mi">920</span><span class="p">,</span>  <span class="mi">780</span><span class="p">,</span>   <span class="mi">30</span><span class="p">,</span> <span class="mi">2770</span><span class="p">]</span>
-<span class="n">p2050</span> <span class="o">=</span> <span class="p">[</span><span class="mi">650</span><span class="p">,</span> <span class="mi">1120</span><span class="p">,</span>  <span class="mi">930</span><span class="p">,</span>  <span class="mi">540</span><span class="p">,</span>  <span class="mi">640</span><span class="p">,</span>  <span class="mi">860</span><span class="p">,</span>  <span class="mi">980</span><span class="p">,</span>   <span class="mi">84</span><span class="p">,</span> <span class="mi">5800</span><span class="p">]</span>
-<span class="n">p2100</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3720</span><span class="p">,</span>  <span class="mi">2230</span><span class="p">,</span>  <span class="mi">2170</span><span class="p">,</span>  <span class="mi">1500</span><span class="p">,</span>   <span class="mi">850</span><span class="p">,</span>   <span class="mi">770</span><span class="p">,</span>   <span class="mi">620</span><span class="p">,</span>   <span class="mi">100</span><span class="p">,</span> <span class="mi">11900</span><span class="p">]</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p2020</span><span class="p">,</span><span class="s1">&#39;o--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;2020&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p2050</span><span class="p">,</span><span class="s1">&#39;^-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;2050&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">p2100</span><span class="p">,</span><span class="s1">&#39;s-.&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;2100&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Power Production, GW&#39;</span><span class="p">)</span>
-
-<span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">))),</span><span class="n">names</span><span class="p">,</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/notebooks_1_0.png" src="_images/notebooks_1_0.png" />
-</div>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="brief-history-of-the-universe">
+<h1>Brief history of the universe<a class="headerlink" href="#brief-history-of-the-universe" title="Permalink to this headline">#</a></h1>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Cosmic time</p></th>
+<th class="text-align:left head"><p>Temperature</p></th>
+<th class="text-align:center head"><p>Events</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(t\approx 10^{-4}\)</span> s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(kT \approx 10^{2}\)</span> MeV</p></td>
+<td class="text-align:center"><p>Quarks form neutrons and protons</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(t\approx 1\)</span> s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(kT \approx 1\)</span> MeV</p></td>
+<td class="text-align:center"><p>Neutrinos decouple</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(t\approx 4\)</span> s</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(kT \approx 0.5\)</span> MeV</p></td>
+<td class="text-align:center"><p>Electron-positron annihilation</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(t\approx 3\)</span> min</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(kT \approx 0.1\)</span> MeV</p></td>
+<td class="text-align:center"><p>Helium and other light nuclei formed</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(t\approx 3\times10^{5}\)</span> years</p></td>
+<td class="text-align:left"><p><span class="math notranslate nohighlight">\(kT \approx 0.3\)</span> eV</p></td>
+<td class="text-align:center"><p>Atoms formed and photons decouple</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(t \gtrsim 1\;\text{ns}\)</span>. after the big bang universe is a gas of fundamental particles: <a class="reference external" href="https://en.wikipedia.org/wiki/Quark">quarks and antiquarks</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Lepton">leptons and antileptons</a>, neutrinos and antineutrinos, and gluons and photons.</p>
+<ul>
+<li><p>After cooling to <span class="math notranslate nohighlight">\(T&lt;10^{14}\)</span> K, the quarks, antiquarks and gluons mostly disappeared. Fortunately the number of quarks slightly exceeded the number of antiquarks due to <a class="reference external" href="https://en.wikipedia.org/wiki/Baryon_asymmetry">matter-antimatter asymmetry</a>. A few leftover quarks formed protons and neutrons present today.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(1\;\text{ms} &lt;t&lt; 1\;\text{s}\)</span>. Universe is a gas of neutrons and protons (<span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(p\)</span>), electrons and positrons (<span class="math notranslate nohighlight">\(e^{-}\)</span>, <span class="math notranslate nohighlight">\(e^{+}\)</span>), neutrinos and antineutrinos (<span class="math notranslate nohighlight">\(\nu\)</span>, <span class="math notranslate nohighlight">\(\bar{\nu}\)</span>), and photons (<span class="math notranslate nohighlight">\(\gamma\)</span>).</p>
+<ul>
+<li><p>As the temperature fell below <span class="math notranslate nohighlight">\(T \approx 10^{10}\)</span> K, the density of the universe became too low for neutrinos to interact effectively with mater. These non-interacting, decoupled neutrons now form a universal gas which has cooled due to expansion of the universe to <span class="math notranslate nohighlight">\(T_{\nu}\approx 2\)</span> K.</p></li>
+<li><p>Soon after the decoupling of the <span class="math notranslate nohighlight">\(\nu\)</span>, the annihilation of <span class="math notranslate nohighlight">\(e^{-}-e^{+}\)</span> pairs removed all the positrons and most of the electrons.</p></li>
+</ul>
+</li>
+<li><p><span class="math notranslate nohighlight">\(t&gt;100\;\text{s}\)</span>. <span class="math notranslate nohighlight">\(n+p\)</span> formed light nuclei, leading to universe in which <span class="math notranslate nohighlight">\(\sim 75\%\)</span> of the mass consists of hydrogen and <span class="math notranslate nohighlight">\(\sim 25\%\)</span> is helium.</p></li>
+<li><p><span class="math notranslate nohighlight">\(t \gtrsim 300'000\;\text{years}\)</span>, <span class="math notranslate nohighlight">\(T &lt; 4000\;\text{K}\)</span>. Temperature low enough for formation of stable atoms. Photons ceased to interact strongly with matter. Universe became transparent to electromagnetic radiation. This radiation, detected by <a class="reference external" href="https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation">Penzias and Wilson</a>, cooled down to <span class="math notranslate nohighlight">\(T_{\gamma} \approx 3\;\text{K}\)</span>, warmer than <span class="math notranslate nohighlight">\(\nu\)</span> due to warming up by <span class="math notranslate nohighlight">\(e^{-}-e^{+}\)</span> annihilation.</p></li>
+<li><p>Expansion and cooling of the universe until it reached its present lumpy condition with mos of the matter assembled in stars, galaxies and clusters of galaxies.</p></li>
+</ul>
 </div>
 
     <script type="text/x-thebe-config">
@@ -417,6 +416,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="physics_of_stars.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Physics of Stars</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="stars_hydrostatic_equilibrium.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Star formation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
