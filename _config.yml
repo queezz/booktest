@@ -3,7 +3,7 @@
 
 title: Test Plasma Book
 author: KAA
-logo: logo.jpg
+logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -23,7 +23,7 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year
-    
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/executablebooks/jupyter-book  # Online location of your book
@@ -35,3 +35,9 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+#parse:
+#  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+#    - amsmath  

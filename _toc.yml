@@ -1,8 +1,17 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
+# ghp-import -n -p -f .\_build\html\
 
 format: jb-book
 root: about
-chapters:
-- file: introduction
-- file: powerbalance
+parts:
+  - caption: Stars
+    chapters:
+    - file: physics_of_stars
+      sections:
+      - file: stars_hystory_of_the_universe
+      - file: stars_hydrostatic_equilibrium      
+  - caption: Fusion
+    chapters:
+    - file: introduction
+    - file: powerbalance
